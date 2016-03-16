@@ -1,52 +1,164 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Your Name Here - Portfolio</title>
-        
-        <style>
-             #navbar{ 
-               background-color:rgb(173, 216, 230);}
-               
-               body{
-                 background-color:rgb(0,255,255);}
-                 
-                 #name{
-                   border-style:ridge;
-                   border-color:rgb(48,125,126);
-                   text-align:center; }
-                       
-                   
-                   
-                  
-             
-            
-        </style>
-        
-    </head>
-    <body>
+<head>
+    <title>Evelyn's Web Page</title>
+  
+    <!-- Code Includes for JS-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/codecademy_name/alphabet.js"></script>
     
-        <div id="navbar">
-             <uo> 
-               <li><a href="http://scratchpad.io/mysterious-writing-25"> Home</a></li>
-               <li><a href="http://scratchpad.io/helpful-face-5078"> About</a></li>
-               <li><a href="http://scratchpad.io/jazzy-act-6368">Contact Information</a></li>
-             </uo>
-             
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:#C2C2C2;
+    }
+    
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      background-image: url("./img/home/south_sister.jpg");
+      background-color: rgba(255, 255, 255, .6);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-blend-mode: color;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./contact.html">Contact</a></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="">Social Media</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+                <li><strong>Recent Blog Posts</strong></li>
+                <ul>
+                    <li><a href="#">August 2015</a></li>
+                    <li><a href="#">July 2015</a></li>
+                    <li><a href="#">June 2015</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container">
+                <!-- Code to Incorporate Codecademy Name Thing -->
+                
+                <canvas id="myCanvas"></canvas>
+                <script type="text/javascript" src="./js/codecademy_name/bubbles.js"></script>
+                <script type="text/javascript" src="./js/codecademy_name/main.js"></script>
+            </div>
             
+            <h1 class="main-title">Evelyn's Homepage</h1>
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info"> I live in San Jose, California. I was also born there. I have some close mischevious friends who get me into trouble.
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info"> Currently suffering in highschool! :^)
+            </div>
+
+            </div>
+        <div class="footer">
         </div>
-        
-        <div id="main">
-            <!-- Put all of your main HTML here -->
-            <h1 id="name">Evelyn Amaya </h1>
-            <img src="http://www.thefrontbottoms.com/sites/g/files/g2000005026/f/201507/new-hdr-bg.jpg" width="400">
-        
-              <h2> About this Page</h2>
-           <p> This page is simply a Portfolio created for educational purposes at 
-           Alpha Cindy Avitia Highschool. For contact information <a href="http://scratchpad.io/jazzy-act-6368">Click Here </a>.</p>
-        </div>
-        
-       
- 
-    </body>
+    </div>
+    
+    
+
+</body>
 </html>
