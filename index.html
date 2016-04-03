@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mr. Yoho's Web Page</title>
+  <!-- TODO: Update Title -->
+  <title>Evelyn's Web Page</title>
   
-    <!-- Code Includes for JS-->
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="http://mryoho.github.io/js/codecademy_name/alphabet.js"></script>
-    
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
   <style>
     body {
       font-family: Verdana;
-      background-color:#C2C2C2;
+      background-color:rgb(0, 165, 400);
     }
     
+    /* TODO: Make sure the height of your page is big enough */
     .main {
       clear: left;
       min-width: 600px;
@@ -68,11 +68,10 @@
       height:300px;
       width:100%;
       position: relative;
-      background-image: url("bubbles.html");
-      background-color: rgba(255, 255, 255, .6);
+      /* TODO: Update the following image */
+      background-image: url("http://www.thefrontbottoms.com/sites/g/files/g2000005026/f/201507/new-hdr-bg.jpg");
       background-repeat: no-repeat;
-      background-size: 100%;
-      background-blend-mode: color;
+      background-size: 100% 300px;
     }
 
     .main-title {
@@ -102,60 +101,109 @@
       font-size: 0.8em;
       margin: 20px;
     }
+    
+    .nav li {
+      line-height: 40px;
+      padding:20px;
+      list-style: none;
+      display: inline-block;
+      background-color: white;
+    }
 
+    /* Select all child links in a nav element */
+    .nav a {
+      text-decoration: none;
+    }
 
+    .navbar-outside {
+      display:block;
+      background-color: #313732;
+      height:80px;
+    }
 
+    .navbar {
+      display:block;
+      background-color: #313732;
+      height:80px;
+      margin:0 auto;
+      min-width:600px;
+      max-width:800px;
+    }
+
+    .navigation li {
+      padding: 30px 15px;
+      list-style: none;
+      text-decoration: none;
+      float:left;
+      height: 20px;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color:#FFFFFF;
+    }
+
+    .navigation li:hover {
+      background-color: rgb(0, 165, 400);
+    }
+    
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    /* END NAVBAR CSS */
+    
+    /* FOOTER */
+    .footer{
+      min-width:600px;
+      max-width:800px;
+      margin:0 auto;
+      background-color: #313732;
+      height:50px;
+      clear:both;
+    }
 
   </style>
 </head>
 <body>
     <div class="navbar">
         <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
             <li class="active"><a href="">Home</a></li>
-            <li><a href="./contact.html">Contact</a></a></li>
-            <li><a href="">About</a></li>
             <li><a href="./portfolio.html">Portfolio</a></li>
-            <li><a href="">Social Media</a></li>
-            <li><a href="./blog.html">Blog</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog: ACS</a></li>
         </ul>
     </div>
 
     <div class="main">
         <div class="sidebar">
             <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
                 <li><strong>Recent Projects</strong></li>
                 <ul>
                     <li><a href="./portfolio.html">Shooting Star</a></li>
                     <li><a href="./portfolio.html">Maze Game</a></li>
                 </ul>
-                <li><strong>Recent Blog Posts</strong></li>
-                <ul>
-                    <li><a href="#">August 2015</a></li>
-                    <li><a href="#">July 2015</a></li>
-                    <li><a href="#">June 2015</a></li>
-                </ul>
             </ul>
         </div>
         <div class="main-page">
-            <div class="image-container">
-                <!-- Code to Incorporate Codecademy Name Thing -->
-                
-                <canvas id="myCanvas"></canvas>
-                <script type="text/javascript" src="bubbles.html"></script>
-                <script type="text/javascript" src="http://mryoho.github.io/js/codecademy_name/main.js"></script>
-            </div>
+            <div class="image-container"></div>
             
-            <h1 class="main-title">Mr. Yoho's Homepage</h1>
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Evelyn's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
             <div class="left-panel">
                 <h2 class="sub-title">My Background</h2>
-                  <p class="text-info">Born and raised in Colorado and Oregon. Majored in computer science, French, and engineering physics at Whitworth University. Studied abroad at Institut National de Sciences Appliques de Lyon in Lyon France and traveled Europe extensively. Lived, taught, and coached teachers in urban and rural Mississippi.
-            </div>
+                  <p class="text-info"> Born and raised in San Jose, California. I am the daughter of two proud Mexican parents. I have an older sister who lives a way cooler life.</p>
+                  </div>
             <div class="right-panel">
                 <h2 class="sub-title">What I Do Now</h2>
-                <p class="text-info">I currently serve as the founding computer science teacher at Alpha Cindy Avitia High School, where I have the joy of working with students from all over East San Jose to discover more about computer science. I also find time to mountain bike, spend time with close friends, and occassionally play some guitar.
+                <p class="text-info">I currently attend Alpha Cindy Avitia Highschool and am trying to get by in life with enough surface knowledge.</p> 
             </div>
 
             </div>
+        <!-- TODO: Add anything you want to the footer -->
         <div class="footer">
         </div>
     </div>
