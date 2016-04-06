@@ -1,60 +1,186 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Your Name Here - Portfolio</title>
-        
-        <style>
-             #navbar{ 
-               background-color:rgb(173, 216, 230);}
-               
-               body{
-                 background-color:rgb(0,165,255);}
-                 
-                 #name{
-                   border-style:ridge;
-                   border-color:rgb(48,125,126);
-                   text-align:center; }
-                   
-                   .image{
-            float: right;
-            font-style: italic;
-        }
-        hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-                       
-                   
-                   
-                  
-             
-            
-        </style>
-        
-    </head>
-    <body>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Evelyn's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:rgb(0, 165, 400);
+    }
     
-        <div id="navbar">
-             <uo> 
-               <li><a href="./index.html"> Home</a></li>
-               <li><a href="./about.html"> About</a></li>
-               <li><a href="./contact.html">Contact Information</a></li>
-               <li><a href="./blog.html">Blog: ACS</a></li>
-             </uo>
-             
-            
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:2000px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:100%;
+      box-sizing:border-box;
+    }
+
+
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("http://www.thefrontbottoms.com/sites/g/files/g2000005026/f/201507/new-hdr-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+    
+    .nav li {
+      line-height: 40px;
+      padding:20px;
+      list-style: none;
+      display: inline-block;
+      background-color: white;
+    }
+
+    /* Select all child links in a nav element */
+    .nav a {
+      text-decoration: none;
+    }
+
+    .navbar-outside {
+      display:block;
+      background-color: #313732;
+      height:80px;
+    }
+
+    .navbar {
+      display:block;
+      background-color: #313732;
+      height:80px;
+      margin:0 auto;
+      min-width:600px;
+      max-width:800px;
+    }
+
+    .navigation li {
+      padding: 30px 15px;
+      list-style: none;
+      text-decoration: none;
+      float:left;
+      height: 20px;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color:#FFFFFF;
+    }
+
+    .navigation li:hover {
+      background-color: rgb(0, 165, 400);
+    }
+    
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    /* END NAVBAR CSS */
+    
+    /* FOOTER */
+    .footer{
+      min-width:600px;
+      max-width:800px;
+      margin:0 auto;
+      background-color: #313732;
+      height:50px;
+      clear:both;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href= "contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog: ACS</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+ 
         </div>
-        
-        <div id="main">
-            <!-- Put all of your main HTML here -->
-           
-            <h1 id="name">Accelerated Computer Science Blog</h1>
+        <div class="main-page">
+
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Evelyn's ACS Blog</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
            <div class="image">
             <a href="http://mryoho.github.io/img/Blog/Blog1-HelloWorld/balloon_game.jpg"><img src="http://mryoho.github.io/img/Blog/Blog1-HelloWorld/balloon_game.jpg" alt="classmates building balloon tower" width="250px"></a>
             <div>Classmates building a balloon tower.</div>
@@ -77,13 +203,39 @@
            <p> What I hope to get out of this class is superiority over my peers. 'Nuff said.</p>
            <p> Until my next post,</p>
             <p> Evelyn.</p>
-            <hr>
+            
+             <a href="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xtp1/v/t34.0-12/12939648_964055987041758_1502757421_n.jpg?oh=4d20dd1988a46bb80586412ee94625d8&oe=57079043"><img src="https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xtp1/v/t34.0-12/12939648_964055987041758_1502757421_n.jpg?oh=4d20dd1988a46bb80586412ee94625d8&oe=57079043" alt="I'm still alive but I'm barely breathing" width="400px"></a>
+            <div>Meme about suffering.</div>
            
+           <h2>I'm Still Alive, But I'm Barely Breathing</h2>
+           <p> 04/05/16 </p>
+           <p> Hello internet! This blog post is actually going to be about my experience here in ACS:CS50! I know it has surely
+           been quite some time since the last time I updated (and <em>only</em>time. HAHA, am I right? Alright, well that wasn't all that
+           funny. Back to the point, I've had such a wonderful time. Sure, times have gotten tough here in this elective, and sure there have been 
+           times where I have wanted to throw in the towel (there have been days that I'm pretty sure I probably have), but that is beside the point.
+           Was this elective at all very intimidating? Yes, very. There are times when I felt I needed a break. Did I? Of course. Was it a very long
+           amount of unnecessary time? Absolutely! PSET 3, I completely lost my chill. I was so confused. I understood the concept, but I was given
+           a very limited amount of practice. I watched several videos and I was thrown into a bunch of this mumbo jumbo code. I made sense of most of what was happening,
+           but I was still somewhat confused. </p>
+           <p> I don't hate this class or any of the work that I have been doing. I love it, it's absolutely fun, but there is so much work to keep up with!
+           My grades in other classes suffered because of excess work I was at least attempting to put into this class. Maybe know physical copy of it, but me trying to understand
+           and watch hour long videos and trying to grasp the basics of what I am supposed to be doing. As a result, even though I blaintly tried -- I still ended up failing
+           this class my previous quarter. Will I still continue to give this class my all? Of course. I'll try my hardest, but I also have to put so much work 
+           into all these other challenges I receive that can either make or break my classes worth 10 points.</p>
+           <p> I do want to continue to work through my computer science work because I absolutely love computer science and it is probably one of my favorite subjects,
+           I'm just an embarassed slow learner who is too afraid to ask for help because of the response I will get.</p>
            
         
         </div>
         
-       
- 
-    </body>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>

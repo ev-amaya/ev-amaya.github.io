@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- TODO: Update your portfolio page title -->
+  <title>Evelyn - Design A Band</title>
+  <!-- TODO: Update Title -->
+  <title>Evelyn's Web Page</title>
+  
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:rgb(0, 165, 400);
+    }
+    
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
+
+    .main-page{
+      display: block;
+      float:right;
+      background-color:#E0E0E0;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color: #059D8E;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:#FFFFFF;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .sidebar ul ul li a:hover{
+      color: #F26101;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("http://www.thefrontbottoms.com/sites/g/files/g2000005026/f/201507/new-hdr-bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+    }
+    
+    .nav li {
+      line-height: 40px;
+      padding:20px;
+      list-style: none;
+      display: inline-block;
+      background-color: white;
+    }
+
+    /* Select all child links in a nav element */
+    .nav a {
+      text-decoration: none;
+    }
+
+    .navbar-outside {
+      display:block;
+      background-color: #313732;
+      height:80px;
+    }
+
+    .navbar {
+      display:block;
+      background-color: #313732;
+      height:80px;
+      margin:0 auto;
+      min-width:600px;
+      max-width:800px;
+    }
+
+    .navigation li {
+      padding: 30px 15px;
+      list-style: none;
+      text-decoration: none;
+      float:left;
+      height: 20px;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color:#FFFFFF;
+    }
+
+    .navigation li:hover {
+      background-color: rgb(0, 165, 400);
+    }
+    
+    .active {
+        background-color: #4CAF50;
+        color: white;
+    }
+    /* END NAVBAR CSS */
+    
+    /* FOOTER */
+    .footer{
+      min-width:600px;
+      max-width:800px;
+      margin:0 auto;
+      background-color: #313732;
+      height:50px;
+      clear:both;
+    }
+  
+  <!-- Linked Stylesheet (Controls Navbar and Footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <style>
+  /*Reset CSS below -- this gets rid of a lot of cross-browser bugs*/
+  /************  DO NOT TOUCH ANY OF THE CSS BELOW ***************/
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+  /**************  END OF RESET CSS   **************/
+  </style>
+  
+  <!-- TODO: Change the CSS colors below so that it fits your website theme -->
+  <style type="text/css" media="screen">
+    body {
+      background-color: gray;
+      padding:5px;
+      color:white;
+      font-family: Verdana;
+    }
+
+    .main {
+      display:block;
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:100%;
+      margin:0 auto;
+      background: white;
+      color: black;
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 2em;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+    
+    p {
+      margin-bottom: 15px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li><a href="./index.html">Home</a></li>
+            <li class="active"><a href="">Portfolio</a></li>
+        </ul>
+    </div>
+
+  <div class="main">
+    <h1>Challenge: Design a Band</h1>
+    <h2>Challenge Information</h2>
+    
+    <p>
+      Write in your own information about the challenge. Ideas to include:
+      <ul>
+        <li>Design thinking is when one person creates something for the people rather than themselves. </li>
+        <li>To design think, you must ask others for input and then make something from that.</li>
+        <li>Step one, ask others for their opinion between certain details (realistic, abstract, sans, serif) and then made something from the input we recieved.</li>
+      </ul>
+    </p>
+    
+    <h2>Album Cover</h2>
+    <img src="./img/albumcover.jpg" alt="Screaming Infidelities - Urban Daydreams" width=500>
+    
+    <h2>Band Biography</h2>
+    <p>
+     Urban Daydreams are an American rock band formed in 2008 by lead vocalist Bobby Low and lead guitarist Desmond Walters with bassist Windsor Holmes and drummer Kaiden Graves in village Yellow Springs, Ohio. 
+    </p>
+    
+    <p>
+        Bobby Low and Desmond Walters, childhood best friends, spent most of their time listening to their favorite rock bands such as; Coldplay, Puddle of Mudd, and U2. Fall of 2008, their senior year, Bobby and Desmond indecisively signed up for Yellow Springs annual Battle of the Bands. In a rush, Bobby and Desmond quickly pulled aside classmate Windsor Holmes to be their bassist in the upcoming concert. Windsor, furthermore, agreed to play for them. To finish their lineup, they needed a drummer. With the concert date nearing to a close in two weeks and no drummer in sight, they decided to search for a drummer on Craigslist. With a some phone number exchanges and a few texts, Desmond and Bobby decided to arrange to meet Kaiden in person at their local Winds Cafe. Three weeks afterwards, Bobby, Desmond, Windsor, and Kaiden began to set up at the highschool's theatre. With little to no preparation, the 4 took the stage and played, for the first time, their 2009 first top 40 hit “So Impossible”. Taking 2nd place in their village's concert, sparks flew, the band decided to stay together and continue to make more music while improving their bond and experimenting with their overall sound. Little did they know, their song “So Impossible” would be the gateway to a world full of endless possibilities. 
+    </p>
+    
+    <p>
+        A few months after their first unofficial concert, the group was contacted by the record label Parlophone, their performance having been recorded and uploaded to Youtube without their knowledge by a fellow classmate. The group decided to sign a five-album contract. Right out of highschool, the boys met with producer Ken Nelson. They recorded their first single, "So Impossible" at Rockfield Studios making it to the Top 40 Hits. Four Albums, two EPs, and 1 hit single later, the group, like all bands, began to experience problems. This became their first official split. Lead vocalist, Bobby Low began to have an affair with lead guitarist Desmond Walter's girlfriend in the year of 2013. Outrage and resentment flooded their working environment. Though the split did not last for long because of their contract, Bobby and Desmond hated each other. But, with every mistake comes a masterpiece. Bobby proposed the idea of making an entirely new album that coordinated with the band's original sound, including their first ever song "So Impossible" to Ken Nelson. Ken Nelson, loved the idea and thus the album "Screaming Infidelities" was born and topped every single chart. Bobby Low and Desmond Walters eventually patched up their friendship in late 2014. They, as of now, are continuing to play their music all around the world. Currently in the United Kingdom for their international tour "The Swiss Army Romance."
+
+    </p>
+    
+  </div>
+  
+  <div class="footer">
+  </div>
+
+
+</body>
+</html>
